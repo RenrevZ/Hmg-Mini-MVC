@@ -14,13 +14,12 @@
             $url = $this->getURL();
 
             //find the first value in the controller/ url
-            if(file_exists('../app/controllers/'.ucwords($url[0]).'.php')){
+            if($url && file_exists('../app/controllers/'.ucwords($url[0]).'.php')){
                 // if the request url exist then set as controller
                 $this->currentController = ucwords($url[0]);
 
                 // uset the 0 index
                 unset($url[0]);
-
             }
 
             // Require the controller
