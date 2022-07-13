@@ -36,7 +36,25 @@
                 }
             }
 
-            echo $this->currentMethod;
+            // check for second url/ method in url
+            if(isset($url[1])){
+                //check if method exist into controller
+                if($url && method_exists($this->currentController,$url[1])){
+                    $this->currentMethod = $url[1];
+
+                    unset($url[1]);
+                }
+            }
+
+
+            // get params
+            $this->params = $url ? array_values($url) : [];
+
+            // callback with the array of params
+            call_user_func_array([$this->currentController,
+                $this->currentMethod],$this->params);
+
+
         }
 
        public function getURL()
