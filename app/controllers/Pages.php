@@ -4,18 +4,17 @@ class Pages extends Controller
 {
     public function __construct()
     {
-        $this->postModel = $this->model('Post');
+
     }
 
     public function index()
     {
-        $posts =  $this->postModel->getPost();
+
         $data = [
-            'title' => 'Hello world',
-            'posts' => $posts
+            'title' => 'Welcome to ShareTech mini Framework'
         ];
 
-        $this->view('pages/index');
+        $this->view('pages/index',$data);
     }
 
     public function about(){
