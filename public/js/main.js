@@ -1,1 +1,0 @@
-alert('tanga tanaga ka');
