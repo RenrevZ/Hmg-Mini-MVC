@@ -7,4 +7,10 @@
             $this->db = new Database();
         }
 
+        public function getPost(){
+            $this->db->query('SELECT * FROM customer');
+
+            $results = $this->db->resultSet();
+            return $results;
+        }
     }
