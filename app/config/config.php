@@ -3,7 +3,7 @@
     define('DB_HOST','localhost');
     define('DB_USER','root');
     define('DB_PASS','');
-    define('DB_NAME','sharetech');
+    define('DB_NAME','pims');
     // app root
     define('APPROOT',dirname(dirname(__FILE__)));
     // url root

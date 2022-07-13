@@ -15,7 +15,7 @@ class Database{
     private $stmt;
     private $error;
 
-    public function __constructor()
+    public function __construct()
     {
         //set dsn
         $dsn = 'mysql:host='.$this->host.';dbname='.$this->db_name;
