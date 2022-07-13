@@ -27,6 +27,16 @@
 
             // instantiate controller class
             $this->currentController = new $this->currentController;
+
+            // check for second url/ method in url
+            if(isset($url[1])){
+                //check if method exist into controller
+                if(method_exists($this->currentController,$url[1])){
+                    $this->currentMethod = $url[1];
+                }
+            }
+
+            echo $this->currentMethod;
         }
 
        public function getURL()
