@@ -1,2 +1,4 @@
 <?php 
-    require_once './libaries/core.php';
+    require_once 'libraries/Core.php';
+    require_once 'libraries/Database.php';
+    require_once 'libraries/Controller.php';
