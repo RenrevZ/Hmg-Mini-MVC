@@ -15,3 +15,5 @@
     define('URLROOT','http://localhost/HG-FRAME-MVC');// insert your localhost url here
     // appname
     define('APPNAME','HG-FRAME-MVC');
+
+  
