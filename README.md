@@ -27,7 +27,7 @@ file unless you're implementing new features.
 > -  this example i have a Controller called pages so i extend the Controller on libraries folder and load the view index inside the views/pages/index.php
 > 
 > -  The Database Controller was the one who holds all of the command on the CRUD functionality so whenever you add a model always run this at the Constructor
->> Example:
+>  Example:
 >>      class Pages extends Controller{ 
 >>                public class __construct(){
 >>                   $this->Model = $this->model('form')
