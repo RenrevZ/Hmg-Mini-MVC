@@ -13,6 +13,7 @@
 1. Paste the project on your xamp/htdocs folder
 1. On the public folder of the project change the ` RewriteBase /HG-FRAME-MVC/public/` of the `.htaccess` according to the path of your localhost server.
 1. Run your localhost server
+1. if you are using tailwind simply type on your terminal `npm run build` to build your tailwind components and for constantly watch changes type `npm run watch`
 
 #### USING THE FRAMEWORK:
 > - The Core Controller Class on the libraries folder was responsible for url routing you dont need to make changes on these
