@@ -14,7 +14,7 @@
 1. On the public folder of the project change the ` RewriteBase /HG-FRAME-MVC/public/` of the `.htaccess` according to the path of your localhost server.
 1. Run your localhost server
 
-> #### USING THE FRAMEWORK:
+#### USING THE FRAMEWORK:
 > - The Core Controller Class on the libraries folder was responsible for url routing you dont need to make changes on these
 file unless you're implementing new features.
 > - The Controller on the libraries folder was responsible for deciding which views or model to load. So whenever you are creating a new controllers always extend it on your controllers in the app/controllers folder.
